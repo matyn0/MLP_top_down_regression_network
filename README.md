@@ -5,12 +5,14 @@ Python ML thesis project where `MLPRegressor` predicts **Irradiance** from meteo
 
 
 *Project Structure*
-`main.py` - orchestration and entry point
-`data_loader.py` - dataset loading
-`preprocessing.py` - feature engineering (time cyclic features)
-`train.py` - experiment execution, ablation, seed stability
-`evaluate.py` - metrics computation
-`utils.py` - helpers (stdout tee, parameter counting)
+
+- `main.py` - orchestration and entry point
+- `data_loader.py` - dataset loading
+- `preprocessing.py` - feature engineering (time cyclic features)
+- `train.py` - experiment execution, ablation, seed stability
+- `evaluate.py` - metrics computation
+- `utils.py` - helpers (stdout tee, parameter counting)
+
  
 *Methodology* (Locked)
 
@@ -47,5 +49,18 @@ Run output is mirrored to terminal and timestamped text logs:
 
 
 
+
+*Docs*
+
+- Methodology: `docs/methodology.md`
+- Experiments: `docs/experiments.md`
+- Results (baseline vs no tilt): `docs/results_baseline_vs_no_tilt.md`
+
+
+
+
+
+
 Notes
 Current workflow prioritizes correctness, reproducibility, and fair validation-driven comparison for thesis-quality reporting.
+
