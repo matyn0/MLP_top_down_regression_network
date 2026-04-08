@@ -1,0 +1,404 @@
+ # DATASET SHAPES #
+Train: (25600, 24)
+Validation: (2845, 24)
+Test: (4622, 24)
+
+# BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.4897, RMSE: 87.2398, R2: 0.8939
+Epochs used (n_iter_): 223
+Model complexity (trainable params): 48385
+
+ # BASELINE REFERENCE #
+baseline_val_rmse=87.2398
+baseline_feature_count=19
+
+ # ABLATION RESULTS (sorted by delta_rmse desc) #
+ feature_removed  val_rmse_without  delta_rmse  n_iter_  n_params      removed_features_full  n_features_after_drop
+    TiltAngleAvg        104.037961   16.798191      198     48129     TiltAngle,TiltAngleAvg                     18
+         doy_cos        103.554165   16.314396      188     48129          TiltAngle,doy_cos                     18
+      FanCurrent         96.416959    9.177189      192     48129       TiltAngle,FanCurrent                     18
+   HeaterCurrent         95.452403    8.212633      188     48129    TiltAngle,HeaterCurrent                     18
+RelativeHumidity         94.945066    7.705296      165     48129 TiltAngle,RelativeHumidity                     18
+      SunAzimuth         94.349700    7.109930      176     48129       TiltAngle,SunAzimuth                     18
+ PressureTempAvg         94.255550    7.015780      102     48129  TiltAngle,PressureTempAvg                     18
+         doy_sin         93.468590    6.228820      159     48129          TiltAngle,doy_sin                     18
+     SunLatitude         93.181043    5.941273      192     48129      TiltAngle,SunLatitude                     18
+    SunLongitude         93.181043    5.941273      192     48129     TiltAngle,SunLongitude                     18
+       SunZenith         93.172230    5.932460      167     48129        TiltAngle,SunZenith                     18
+     PressureAvg         92.872253    5.632484      192     48129      TiltAngle,PressureAvg                     18
+ BodyTemperature         91.931203    4.691433      292     48129  TiltAngle,BodyTemperature                     18
+        hour_sin         91.921579    4.681810      159     48129         TiltAngle,hour_sin                     18
+        FanSpeed         91.642243    4.402474      220     48129         TiltAngle,FanSpeed                     18
+        Pressure         88.792922    1.553153      167     48129         TiltAngle,Pressure                     18
+    HumidityTemp         88.757084    1.517315      167     48129     TiltAngle,HumidityTemp                     18
+        hour_cos         88.120961    0.881191      220     48129         TiltAngle,hour_cos                     18
+    PressureTemp         88.086403    0.846633      220     48129     TiltAngle,PressureTemp                     18
+
+ # FOCUS CANDIDATE: hour_cos #
+val_rmse_without=88.1210, delta_rmse=0.8812
+
+ # FINAL SUMMARY #
+Baseline model: Model (256,128,64,32) | features=19 | epochs=223 | params=48385
+Baseline metrics: VAL_RMSE=87.2398
+
+Best single-feature drop by VAL_RMSE (lowest):
+drop='PressureTemp', val_rmse_without=88.0864, delta_rmse=0.8466
+
+Most important feature (largest RMSE increase when removed):
+feature='TiltAngleAvg', val_rmse_without=104.0380, delta_rmse=16.7982
+
+Worst single-feature drop by VAL_RMSE (highest):
+drop='TiltAngleAvg', val_rmse_without=104.0380, delta_rmse=16.7982
+
+Features with negative delta_rmse (removing helped):
+none
+
+ # SEED = 0 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=0 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.9772, RMSE: 89.1640, R2: 0.8892
+Epochs used (n_iter_): 199
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=0 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.7406, RMSE: 88.2652, R2: 0.8914
+Epochs used (n_iter_): 240
+Model complexity (trainable params): 48129
+
+ # SEED = 1 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=1 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.8401, RMSE: 91.4827, R2: 0.8833
+Epochs used (n_iter_): 152
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=1 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.0353, RMSE: 94.6672, R2: 0.8751
+Epochs used (n_iter_): 149
+Model complexity (trainable params): 48129
+
+ # SEED = 2 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=2 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.8414, RMSE: 93.8497, R2: 0.8772
+Epochs used (n_iter_): 201
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=2 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.2848, RMSE: 91.9346, R2: 0.8822
+Epochs used (n_iter_): 174
+Model complexity (trainable params): 48129
+
+ # SEED = 3 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=3 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.4468, RMSE: 91.6314, R2: 0.8829
+Epochs used (n_iter_): 169
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=3 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.7402, RMSE: 86.9537, R2: 0.8946
+Epochs used (n_iter_): 187
+Model complexity (trainable params): 48129
+
+ # SEED = 4 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=4 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.9913, RMSE: 92.5141, R2: 0.8807
+Epochs used (n_iter_): 155
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=4 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.4536, RMSE: 90.4085, R2: 0.8860
+Epochs used (n_iter_): 222
+Model complexity (trainable params): 48129
+
+ # SEED = 5 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=5 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.1552, RMSE: 93.4492, R2: 0.8782
+Epochs used (n_iter_): 159
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=5 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.9035, RMSE: 90.8183, R2: 0.8850
+Epochs used (n_iter_): 142
+Model complexity (trainable params): 48129
+
+ # SEED = 6 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=6 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.2512, RMSE: 93.2303, R2: 0.8788
+Epochs used (n_iter_): 226
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=6 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.1502, RMSE: 88.5557, R2: 0.8907
+Epochs used (n_iter_): 182
+Model complexity (trainable params): 48129
+
+ # SEED = 7 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=7 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.4191, RMSE: 93.2424, R2: 0.8788
+Epochs used (n_iter_): 86
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=7 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.5480, RMSE: 90.0273, R2: 0.8870
+Epochs used (n_iter_): 140
+Model complexity (trainable params): 48129
+
+ # SEED = 8 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=8 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.6069, RMSE: 93.1737, R2: 0.8790
+Epochs used (n_iter_): 146
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=8 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.5204, RMSE: 91.3978, R2: 0.8835
+Epochs used (n_iter_): 139
+Model complexity (trainable params): 48129
+
+ # SEED = 9 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=9 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.6809, RMSE: 87.9456, R2: 0.8922
+Epochs used (n_iter_): 190
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=9 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.9534, RMSE: 89.6369, R2: 0.8880
+Epochs used (n_iter_): 195
+Model complexity (trainable params): 48129
+
+ # SEED = 10 #
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=10 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.3023, RMSE: 91.1141, R2: 0.8843
+Epochs used (n_iter_): 213
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=10 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.4091, RMSE: 94.6579, R2: 0.8751
+Epochs used (n_iter_): 185
+Model complexity (trainable params): 48129
+
+ # Stability result per SEED #
+ random_state                     experiment   removed_features  n_features  val_rmse
+            0     baseline_without_TiltAngle          TiltAngle          19 89.163993
+            0 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 88.265176
+            1     baseline_without_TiltAngle          TiltAngle          19 91.482684
+            1 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 94.667201
+            2     baseline_without_TiltAngle          TiltAngle          19 93.849703
+            2 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 91.934553
+            3     baseline_without_TiltAngle          TiltAngle          19 91.631420
+            3 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 86.953706
+            4     baseline_without_TiltAngle          TiltAngle          19 92.514051
+            4 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 90.408481
+            5     baseline_without_TiltAngle          TiltAngle          19 93.449216
+            5 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 90.818294
+            6     baseline_without_TiltAngle          TiltAngle          19 93.230324
+            6 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 88.555678
+            7     baseline_without_TiltAngle          TiltAngle          19 93.242446
+            7 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 90.027314
+            8     baseline_without_TiltAngle          TiltAngle          19 93.173665
+            8 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 91.397806
+            9     baseline_without_TiltAngle          TiltAngle          19 87.945625
+            9 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 89.636938
+           10     baseline_without_TiltAngle          TiltAngle          19 91.114077
+           10 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 94.657905
+
+ ** val-only summ **
+
+ Per exp (val rmse stats):
+                    experiment      mean      std       max       min
+    baseline_without_TiltAngle 91.890655 1.890990 93.849703 87.945625
+without_TiltAngle_and_hour_cos 90.665732 2.442225 94.667201 86.953706
+
+ Paired per seed delta (hour_cos - baseline): 

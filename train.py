@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPRegressor
-
 from evaluate import evaluate_metrics
 from utils import count_trainable_params
 
@@ -109,8 +108,13 @@ def run_leave_one_feature_out_ablation(
     val_df,
     baseline_features,
     baseline_rmse,
+    baseline_removed_features=None,
     random_state=42,
 ):
+    if baseline_removed_features is None:
+        baseline_removed_features = []
+
+
     ablation_rows = []
     for feature_to_remove in baseline_features:
         feature_cols = [f for f in baseline_features if f != feature_to_remove]
@@ -139,6 +143,9 @@ def run_leave_one_feature_out_ablation(
         val_pred = mlp.predict(X_val_scaled)
         _, val_rmse_without, _ = evaluate_metrics(y_val, val_pred)
         delta_rmse = val_rmse_without - baseline_rmse
+
+        full_removed_features = baseline_removed_features + [feature_to_remove]
+
         ablation_rows.append(
             {
                 "feature_removed": feature_to_remove,
@@ -146,6 +153,8 @@ def run_leave_one_feature_out_ablation(
                 "delta_rmse": delta_rmse,
                 "n_iter_": mlp.n_iter_,
                 "n_params": count_trainable_params(mlp),
+                "removed_features_full": ",".join(full_removed_features),
+                "n_features_after_drop": len(feature_cols),
             }
         )
 
