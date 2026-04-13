@@ -1,0 +1,1126 @@
+# DATASET SHAPES #
+Train: (25600, 24)
+Validation: (2845, 24)
+Test: (4622, 24)
+
+######## MODEL: mlp_256_128_64_32_a1e4 ########
+
+# SEED = 0 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.9772, RMSE: 89.1640, R2: 0.8892
+Epochs used (n_iter_): 199
+Model complexity (trainable params): 48385
+
+# SEED = 0 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.4111, RMSE: 93.7730, R2: 0.8774
+Epochs used (n_iter_): 157
+Model complexity (trainable params): 48129
+
+# SEED = 0 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.7406, RMSE: 88.2652, R2: 0.8914
+Epochs used (n_iter_): 240
+Model complexity (trainable params): 48129
+
+# SEED = 0 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.5195, RMSE: 94.5355, R2: 0.8754
+Epochs used (n_iter_): 182
+Model complexity (trainable params): 48129
+
+# SEED = 1 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.8401, RMSE: 91.4827, R2: 0.8833
+Epochs used (n_iter_): 152
+Model complexity (trainable params): 48385
+
+# SEED = 1 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.7270, RMSE: 92.2940, R2: 0.8812
+Epochs used (n_iter_): 263
+Model complexity (trainable params): 48129
+
+# SEED = 1 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.0353, RMSE: 94.6672, R2: 0.8751
+Epochs used (n_iter_): 149
+Model complexity (trainable params): 48129
+
+# SEED = 1 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.7319, RMSE: 93.7916, R2: 0.8774
+Epochs used (n_iter_): 150
+Model complexity (trainable params): 48129
+
+# SEED = 2 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.8414, RMSE: 93.8497, R2: 0.8772
+Epochs used (n_iter_): 201
+Model complexity (trainable params): 48385
+
+# SEED = 2 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.2089, RMSE: 92.7949, R2: 0.8799
+Epochs used (n_iter_): 271
+Model complexity (trainable params): 48129
+
+# SEED = 2 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.2848, RMSE: 91.9346, R2: 0.8822
+Epochs used (n_iter_): 174
+Model complexity (trainable params): 48129
+
+# SEED = 2 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.3610, RMSE: 92.5186, R2: 0.8807
+Epochs used (n_iter_): 140
+Model complexity (trainable params): 48129
+
+# SEED = 3 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.4468, RMSE: 91.6314, R2: 0.8829
+Epochs used (n_iter_): 169
+Model complexity (trainable params): 48385
+
+# SEED = 3 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.9401, RMSE: 90.4020, R2: 0.8861
+Epochs used (n_iter_): 164
+Model complexity (trainable params): 48129
+
+# SEED = 3 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.7402, RMSE: 86.9537, R2: 0.8946
+Epochs used (n_iter_): 187
+Model complexity (trainable params): 48129
+
+# SEED = 3 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.8887, RMSE: 91.7060, R2: 0.8827
+Epochs used (n_iter_): 205
+Model complexity (trainable params): 48129
+
+# SEED = 4 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.9913, RMSE: 92.5141, R2: 0.8807
+Epochs used (n_iter_): 155
+Model complexity (trainable params): 48385
+
+# SEED = 4 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.1187, RMSE: 90.2623, R2: 0.8864
+Epochs used (n_iter_): 222
+Model complexity (trainable params): 48129
+
+# SEED = 4 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.4536, RMSE: 90.4085, R2: 0.8860
+Epochs used (n_iter_): 222
+Model complexity (trainable params): 48129
+
+# SEED = 4 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.8201, RMSE: 96.6530, R2: 0.8698
+Epochs used (n_iter_): 117
+Model complexity (trainable params): 48129
+
+# SEED = 5 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.1552, RMSE: 93.4492, R2: 0.8782
+Epochs used (n_iter_): 159
+Model complexity (trainable params): 48385
+
+# SEED = 5 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.6758, RMSE: 87.9696, R2: 0.8921
+Epochs used (n_iter_): 210
+Model complexity (trainable params): 48129
+
+# SEED = 5 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.9035, RMSE: 90.8183, R2: 0.8850
+Epochs used (n_iter_): 142
+Model complexity (trainable params): 48129
+
+# SEED = 5 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.6610, RMSE: 92.7297, R2: 0.8801
+Epochs used (n_iter_): 200
+Model complexity (trainable params): 48129
+
+# SEED = 6 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.2512, RMSE: 93.2303, R2: 0.8788
+Epochs used (n_iter_): 226
+Model complexity (trainable params): 48385
+
+# SEED = 6 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 59.9939, RMSE: 97.1150, R2: 0.8685
+Epochs used (n_iter_): 153
+Model complexity (trainable params): 48129
+
+# SEED = 6 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.1502, RMSE: 88.5557, R2: 0.8907
+Epochs used (n_iter_): 182
+Model complexity (trainable params): 48129
+
+# SEED = 6 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.8171, RMSE: 88.5667, R2: 0.8906
+Epochs used (n_iter_): 201
+Model complexity (trainable params): 48129
+
+# SEED = 7 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.4191, RMSE: 93.2424, R2: 0.8788
+Epochs used (n_iter_): 86
+Model complexity (trainable params): 48385
+
+# SEED = 7 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.8441, RMSE: 90.4836, R2: 0.8859
+Epochs used (n_iter_): 177
+Model complexity (trainable params): 48129
+
+# SEED = 7 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.5480, RMSE: 90.0273, R2: 0.8870
+Epochs used (n_iter_): 140
+Model complexity (trainable params): 48129
+
+# SEED = 7 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.0116, RMSE: 91.1794, R2: 0.8841
+Epochs used (n_iter_): 116
+Model complexity (trainable params): 48129
+
+# SEED = 8 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.6069, RMSE: 93.1737, R2: 0.8790
+Epochs used (n_iter_): 146
+Model complexity (trainable params): 48385
+
+# SEED = 8 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.9945, RMSE: 88.7808, R2: 0.8901
+Epochs used (n_iter_): 202
+Model complexity (trainable params): 48129
+
+# SEED = 8 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.5204, RMSE: 91.3978, R2: 0.8835
+Epochs used (n_iter_): 139
+Model complexity (trainable params): 48129
+
+# SEED = 8 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.5892, RMSE: 87.5654, R2: 0.8931
+Epochs used (n_iter_): 244
+Model complexity (trainable params): 48129
+
+# SEED = 9 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.6809, RMSE: 87.9456, R2: 0.8922
+Epochs used (n_iter_): 190
+Model complexity (trainable params): 48385
+
+# SEED = 9 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.8036, RMSE: 87.1132, R2: 0.8942
+Epochs used (n_iter_): 193
+Model complexity (trainable params): 48129
+
+# SEED = 9 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.9534, RMSE: 89.6369, R2: 0.8880
+Epochs used (n_iter_): 195
+Model complexity (trainable params): 48129
+
+# SEED = 9 | MODEL=mlp_256_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.9404, RMSE: 88.7503, R2: 0.8902
+Epochs used (n_iter_): 193
+Model complexity (trainable params): 48129
+
+######## MODEL: mlp_128_64_32_a1e4 ########
+
+# SEED = 0 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.8544, RMSE: 91.4788, R2: 0.8833
+Epochs used (n_iter_): 258
+Model complexity (trainable params): 12929
+
+# SEED = 0 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.3502, RMSE: 93.5527, R2: 0.8780
+Epochs used (n_iter_): 231
+Model complexity (trainable params): 12801
+
+# SEED = 0 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.1345, RMSE: 89.4590, R2: 0.8884
+Epochs used (n_iter_): 316
+Model complexity (trainable params): 12801
+
+# SEED = 0 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.6929, RMSE: 94.4615, R2: 0.8756
+Epochs used (n_iter_): 231
+Model complexity (trainable params): 12801
+
+# SEED = 1 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 61.6950, RMSE: 95.9134, R2: 0.8717
+Epochs used (n_iter_): 305
+Model complexity (trainable params): 12929
+
+# SEED = 1 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 59.8456, RMSE: 96.1307, R2: 0.8712
+Epochs used (n_iter_): 227
+Model complexity (trainable params): 12801
+
+# SEED = 1 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.1590, RMSE: 91.4692, R2: 0.8834
+Epochs used (n_iter_): 310
+Model complexity (trainable params): 12801
+
+# SEED = 1 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 67.7640, RMSE: 100.8666, R2: 0.8582
+Epochs used (n_iter_): 328
+Model complexity (trainable params): 12801
+
+# SEED = 2 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 59.6733, RMSE: 94.8929, R2: 0.8745
+Epochs used (n_iter_): 233
+Model complexity (trainable params): 12929
+
+# SEED = 2 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.1717, RMSE: 92.5096, R2: 0.8807
+Epochs used (n_iter_): 360
+Model complexity (trainable params): 12801
+
+# SEED = 2 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.5714, RMSE: 89.6180, R2: 0.8880
+Epochs used (n_iter_): 371
+Model complexity (trainable params): 12801
+
+# SEED = 2 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.0969, RMSE: 91.7832, R2: 0.8826
+Epochs used (n_iter_): 298
+Model complexity (trainable params): 12801
+
+# SEED = 3 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 60.2429, RMSE: 96.6046, R2: 0.8699
+Epochs used (n_iter_): 182
+Model complexity (trainable params): 12929
+
+# SEED = 3 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.9965, RMSE: 93.2827, R2: 0.8787
+Epochs used (n_iter_): 236
+Model complexity (trainable params): 12801
+
+# SEED = 3 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 59.0369, RMSE: 94.1167, R2: 0.8765
+Epochs used (n_iter_): 205
+Model complexity (trainable params): 12801
+
+# SEED = 3 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 59.4386, RMSE: 94.9606, R2: 0.8743
+Epochs used (n_iter_): 236
+Model complexity (trainable params): 12801
+
+# SEED = 4 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 61.0959, RMSE: 94.7119, R2: 0.8749
+Epochs used (n_iter_): 237
+Model complexity (trainable params): 12929
+
+# SEED = 4 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 60.3602, RMSE: 96.9976, R2: 0.8688
+Epochs used (n_iter_): 270
+Model complexity (trainable params): 12801
+
+# SEED = 4 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.1896, RMSE: 91.7320, R2: 0.8827
+Epochs used (n_iter_): 270
+Model complexity (trainable params): 12801
+
+# SEED = 4 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.7602, RMSE: 94.7502, R2: 0.8748
+Epochs used (n_iter_): 269
+Model complexity (trainable params): 12801
+
+# SEED = 5 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.9900, RMSE: 90.8363, R2: 0.8850
+Epochs used (n_iter_): 219
+Model complexity (trainable params): 12929
+
+# SEED = 5 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.3475, RMSE: 91.9088, R2: 0.8822
+Epochs used (n_iter_): 346
+Model complexity (trainable params): 12801
+
+# SEED = 5 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.1320, RMSE: 90.3419, R2: 0.8862
+Epochs used (n_iter_): 311
+Model complexity (trainable params): 12801
+
+# SEED = 5 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 60.6210, RMSE: 92.7788, R2: 0.8800
+Epochs used (n_iter_): 215
+Model complexity (trainable params): 12801
+
+# SEED = 6 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.4273, RMSE: 93.2801, R2: 0.8787
+Epochs used (n_iter_): 323
+Model complexity (trainable params): 12929
+
+# SEED = 6 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.1011, RMSE: 89.8554, R2: 0.8874
+Epochs used (n_iter_): 290
+Model complexity (trainable params): 12801
+
+# SEED = 6 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 63.7716, RMSE: 96.6422, R2: 0.8698
+Epochs used (n_iter_): 275
+Model complexity (trainable params): 12801
+
+# SEED = 6 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 61.7257, RMSE: 95.6822, R2: 0.8724
+Epochs used (n_iter_): 212
+Model complexity (trainable params): 12801
+
+# SEED = 7 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.9395, RMSE: 91.3329, R2: 0.8837
+Epochs used (n_iter_): 278
+Model complexity (trainable params): 12929
+
+# SEED = 7 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.5734, RMSE: 90.6689, R2: 0.8854
+Epochs used (n_iter_): 345
+Model complexity (trainable params): 12801
+
+# SEED = 7 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.0288, RMSE: 92.0557, R2: 0.8819
+Epochs used (n_iter_): 309
+Model complexity (trainable params): 12801
+
+# SEED = 7 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.6692, RMSE: 91.6100, R2: 0.8830
+Epochs used (n_iter_): 275
+Model complexity (trainable params): 12801
+
+# SEED = 8 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 59.9269, RMSE: 94.2110, R2: 0.8763
+Epochs used (n_iter_): 188
+Model complexity (trainable params): 12929
+
+# SEED = 8 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.4739, RMSE: 90.7339, R2: 0.8852
+Epochs used (n_iter_): 316
+Model complexity (trainable params): 12801
+
+# SEED = 8 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.9673, RMSE: 92.7795, R2: 0.8800
+Epochs used (n_iter_): 232
+Model complexity (trainable params): 12801
+
+# SEED = 8 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.6672, RMSE: 92.0385, R2: 0.8819
+Epochs used (n_iter_): 306
+Model complexity (trainable params): 12801
+
+# SEED = 9 | BASELINE without TiltAngle #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.8371, RMSE: 90.6157, R2: 0.8855
+Epochs used (n_iter_): 328
+Model complexity (trainable params): 12929
+
+# SEED = 9 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=PressureTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.1330, RMSE: 94.2627, R2: 0.8761
+Epochs used (n_iter_): 244
+Model complexity (trainable params): 12801
+
+# SEED = 9 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=hour_cos #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.4229, RMSE: 87.6572, R2: 0.8929
+Epochs used (n_iter_): 475
+Model complexity (trainable params): 12801
+
+# SEED = 9 | MODEL=mlp_128_64_32_a1e4 | CANDIDATE=HumidityTemp #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.2727, RMSE: 91.9467, R2: 0.8821
+Epochs used (n_iter_): 330
+Model complexity (trainable params): 12801
+
+# RAW PER-SEED COMPARISON #
+            model_name  seed candidate_feature  baseline_rmse  candidate_rmse  delta_candidate_minus_baseline
+    mlp_128_64_32_a1e4     0      HumidityTemp      91.478760       94.461506                        2.982747
+    mlp_128_64_32_a1e4     1      HumidityTemp      95.913383      100.866584                        4.953200
+    mlp_128_64_32_a1e4     2      HumidityTemp      94.892897       91.783192                       -3.109706
+    mlp_128_64_32_a1e4     3      HumidityTemp      96.604644       94.960558                       -1.644086
+    mlp_128_64_32_a1e4     4      HumidityTemp      94.711945       94.750173                        0.038229
+    mlp_128_64_32_a1e4     5      HumidityTemp      90.836307       92.778778                        1.942471
+    mlp_128_64_32_a1e4     6      HumidityTemp      93.280072       95.682160                        2.402087
+    mlp_128_64_32_a1e4     7      HumidityTemp      91.332911       91.610002                        0.277092
+    mlp_128_64_32_a1e4     8      HumidityTemp      94.210974       92.038457                       -2.172518
+    mlp_128_64_32_a1e4     9      HumidityTemp      90.615684       91.946711                        1.331027
+    mlp_128_64_32_a1e4     0      PressureTemp      91.478760       93.552748                        2.073989
+    mlp_128_64_32_a1e4     1      PressureTemp      95.913383       96.130690                        0.217307
+    mlp_128_64_32_a1e4     2      PressureTemp      94.892897       92.509556                       -2.383341
+    mlp_128_64_32_a1e4     3      PressureTemp      96.604644       93.282701                       -3.321943
+    mlp_128_64_32_a1e4     4      PressureTemp      94.711945       96.997627                        2.285682
+    mlp_128_64_32_a1e4     5      PressureTemp      90.836307       91.908839                        1.072531
+    mlp_128_64_32_a1e4     6      PressureTemp      93.280072       89.855359                       -3.424713
+    mlp_128_64_32_a1e4     7      PressureTemp      91.332911       90.668858                       -0.664053
+    mlp_128_64_32_a1e4     8      PressureTemp      94.210974       90.733929                       -3.477045
+    mlp_128_64_32_a1e4     9      PressureTemp      90.615684       94.262737                        3.647053
+    mlp_128_64_32_a1e4     0          hour_cos      91.478760       89.459025                       -2.019735
+    mlp_128_64_32_a1e4     1          hour_cos      95.913383       91.469214                       -4.444169
+    mlp_128_64_32_a1e4     2          hour_cos      94.892897       89.618049                       -5.274848
+    mlp_128_64_32_a1e4     3          hour_cos      96.604644       94.116737                       -2.487907
+    mlp_128_64_32_a1e4     4          hour_cos      94.711945       91.732018                       -2.979926
+    mlp_128_64_32_a1e4     5          hour_cos      90.836307       90.341886                       -0.494421
+    mlp_128_64_32_a1e4     6          hour_cos      93.280072       96.642169                        3.362096
+    mlp_128_64_32_a1e4     7          hour_cos      91.332911       92.055739                        0.722829
+    mlp_128_64_32_a1e4     8          hour_cos      94.210974       92.779460                       -1.431514
+    mlp_128_64_32_a1e4     9          hour_cos      90.615684       87.657178                       -2.958507
+mlp_256_128_64_32_a1e4     0      HumidityTemp      89.163993       94.535494                        5.371500
+mlp_256_128_64_32_a1e4     1      HumidityTemp      91.482684       93.791593                        2.308908
+mlp_256_128_64_32_a1e4     2      HumidityTemp      93.849703       92.518639                       -1.331064
+mlp_256_128_64_32_a1e4     3      HumidityTemp      91.631420       91.706019                        0.074600
+mlp_256_128_64_32_a1e4     4      HumidityTemp      92.514051       96.652984                        4.138932
+mlp_256_128_64_32_a1e4     5      HumidityTemp      93.449216       92.729740                       -0.719475
+mlp_256_128_64_32_a1e4     6      HumidityTemp      93.230324       88.566746                       -4.663578
+mlp_256_128_64_32_a1e4     7      HumidityTemp      93.242446       91.179406                       -2.063040
+mlp_256_128_64_32_a1e4     8      HumidityTemp      93.173665       87.565363                       -5.608302
+mlp_256_128_64_32_a1e4     9      HumidityTemp      87.945625       88.750268                        0.804644
+mlp_256_128_64_32_a1e4     0      PressureTemp      89.163993       93.773011                        4.609018
+mlp_256_128_64_32_a1e4     1      PressureTemp      91.482684       92.293991                        0.811307
+mlp_256_128_64_32_a1e4     2      PressureTemp      93.849703       92.794905                       -1.054798
+mlp_256_128_64_32_a1e4     3      PressureTemp      91.631420       90.402023                       -1.229397
+mlp_256_128_64_32_a1e4     4      PressureTemp      92.514051       90.262263                       -2.251788
+mlp_256_128_64_32_a1e4     5      PressureTemp      93.449216       87.969605                       -5.479611
+mlp_256_128_64_32_a1e4     6      PressureTemp      93.230324       97.114974                        3.884651
+mlp_256_128_64_32_a1e4     7      PressureTemp      93.242446       90.483556                       -2.758890
+mlp_256_128_64_32_a1e4     8      PressureTemp      93.173665       88.780817                       -4.392848
+mlp_256_128_64_32_a1e4     9      PressureTemp      87.945625       87.113206                       -0.832418
+mlp_256_128_64_32_a1e4     0          hour_cos      89.163993       88.265176                       -0.898818
+mlp_256_128_64_32_a1e4     1          hour_cos      91.482684       94.667201                        3.184517
+mlp_256_128_64_32_a1e4     2          hour_cos      93.849703       91.934553                       -1.915151
+mlp_256_128_64_32_a1e4     3          hour_cos      91.631420       86.953706                       -4.677713
+mlp_256_128_64_32_a1e4     4          hour_cos      92.514051       90.408481                       -2.105570
+mlp_256_128_64_32_a1e4     5          hour_cos      93.449216       90.818294                       -2.630922
+mlp_256_128_64_32_a1e4     6          hour_cos      93.230324       88.555678                       -4.674646
+mlp_256_128_64_32_a1e4     7          hour_cos      93.242446       90.027314                       -3.215132
+mlp_256_128_64_32_a1e4     8          hour_cos      93.173665       91.397806                       -1.775859
+mlp_256_128_64_32_a1e4     9          hour_cos      87.945625       89.636938                        1.691314
+
+# SUMMARY BY MODEL + CANDIDATE #
+            model_name candidate_feature  mean_delta  std_delta  median_delta  min_delta  max_delta  wins  total  win_rate
+    mlp_128_64_32_a1e4          hour_cos   -1.800610   2.520456     -2.253821  -5.274848   3.362096     8     10       0.8
+    mlp_128_64_32_a1e4      PressureTemp   -0.397453   2.654550     -0.223373  -3.477045   3.647053     5     10       0.5
+    mlp_128_64_32_a1e4      HumidityTemp    0.700054   2.516974      0.804059  -3.109706   4.953200     3     10       0.3
+mlp_256_128_64_32_a1e4          hour_cos   -1.701798   2.518718     -2.010360  -4.677713   3.184517     8     10       0.8
+mlp_256_128_64_32_a1e4      PressureTemp   -0.869477   3.244723     -1.142097  -5.479611   4.609018     7     10       0.7
+mlp_256_128_64_32_a1e4      HumidityTemp   -0.168687   3.518693     -0.322438  -5.608302   5.371500     5     10       0.5
+
+# OVERALL CANDIDATE RANKING (BOTH MODELS TOGETHER) #
+candidate_feature  mean_delta  std_delta  median_delta  wins  total  win_rate
+         hour_cos   -1.751204   2.452910     -2.062653    16     20       0.8
+     PressureTemp   -0.633465   2.895439     -0.943608    12     20       0.6
+     HumidityTemp    0.265683   3.010690      0.175846     8     20       0.4

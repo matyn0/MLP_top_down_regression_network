@@ -5,23 +5,41 @@ from evaluate import evaluate_metrics
 from utils import count_trainable_params
 
 
-def run_experiment(train_df, val_df, test_df, features_to_remove=None, experiment_name="baseline", random_state=42, evaluate_test=False):
+def run_experiment(
+    train_df,
+    val_df,
+    test_df,
+    features_to_remove=None,
+    experiment_name="baseline",
+    random_state=42,
+    evaluate_test=False,
+    mlp_params=None,
+    model_name=None,
+):
 
     if features_to_remove is None:
         features_to_remove = []
 
+    if mlp_params is None:
+        mlp_params = {}
+
+
     # Target and input features (single final setup)
     target_col = "Irradiance"
     non_feature_cols = ["PictureName", "DateTime", "IrradianceNotCompensated", target_col]
-
     all_features = [c for c in train_df.columns if c not in non_feature_cols]
 
+
+#safety vibe check
     missing_features = [f for f in features_to_remove if f not in all_features]
     if missing_features:
         raise ValueError(f"Neznama feature-a v features_to_remove: {missing_features}")
 
+#final feature subset
     feature_cols = [f for f in all_features if f not in features_to_remove]
 
+
+#split for x/y datasets
     X_train = train_df[feature_cols]
     y_train = train_df[target_col]
     X_val = val_df[feature_cols]
@@ -30,13 +48,15 @@ def run_experiment(train_df, val_df, test_df, features_to_remove=None, experimen
         X_test = test_df[feature_cols]
         y_test = test_df[target_col]
 
-    # Handle missing values using train-set medians only
+# Handle missing values using train-set medians only
     train_medians = X_train.median(numeric_only=True)
     X_train = X_train.fillna(train_medians)
     X_val = X_val.fillna(train_medians)
     if evaluate_test:
         X_test = X_test.fillna(train_medians)
 
+
+#diagnostics prints
     print("\n # MAJKL DJUK #")
     print("Same feature columns train/val:", list(X_train.columns) == list(X_val.columns))
     if evaluate_test:
@@ -55,19 +75,25 @@ def run_experiment(train_df, val_df, test_df, features_to_remove=None, experimen
     if evaluate_test:
         X_test_scaled = scaler.transform(X_test)
 
-    # One selected model only
-    mlp = MLPRegressor(
-        hidden_layer_sizes=(256,128,64,32),
-        activation="relu",
-        solver="adam",
-        max_iter=1500,
-        random_state=random_state,
-    )
+
+#model params assebly
+    default_mlp_params = {
+        "hidden_layer_sizes": (256, 128, 64, 32),
+        "activation": "relu",
+        "solver": "adam",
+        "max_iter": 1500,
+        "random_state": random_state,
+    }
+    final_mlp_params = {**default_mlp_params, **mlp_params}
+    final_mlp_params["random_state"] = random_state
+
+#actual training starts right here 
+    mlp = MLPRegressor(**final_mlp_params) 
     mlp.fit(X_train_scaled, y_train)
     epochs_used = mlp.n_iter_
     n_params = count_trainable_params(mlp)
 
-    # Validation
+#validation
     val_pred = mlp.predict(X_val_scaled)
     val_mae, val_rmse, val_r2 = evaluate_metrics(y_val, val_pred)
     print("\nValidation results:")
@@ -75,7 +101,7 @@ def run_experiment(train_df, val_df, test_df, features_to_remove=None, experimen
     print(f"Epochs used (n_iter_): {epochs_used}")
     print(f"Model complexity (trainable params): {n_params}")
 
-    # Test
+#test
     test_mae, test_rmse, test_r2 = None, None, None
 
     if evaluate_test:
@@ -84,14 +110,18 @@ def run_experiment(train_df, val_df, test_df, features_to_remove=None, experimen
         print("Test results:")
         print(f"MAE: {test_mae:.4f}, RMSE: {test_rmse:.4f}, R2: {test_r2:.4f}")
 
+    selected_model_name = model_name or f"MLP_{final_mlp_params['hidden_layer_sizes']}"
+
     return {
-        "best_model": "Model (256,128,64,32)",
+        "best_model": selected_model_name,
         "experiment": experiment_name,
         "removed_features": ",".join(features_to_remove) if features_to_remove else "none",
         "feature_list": feature_cols,
         "n_features": X_train.shape[1],
         "n_iter_": epochs_used,
         "n_params": n_params,
+        "model_name": selected_model_name,
+        "mlp_params": final_mlp_params,
         "val_mae": val_mae,
         "val_rmse": val_rmse,
         "val_r2": val_r2,

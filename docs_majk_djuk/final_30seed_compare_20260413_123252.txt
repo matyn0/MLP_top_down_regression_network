@@ -1,0 +1,1459 @@
+# DATASET SHAPES #
+Train: (25600, 24)
+Validation: (2845, 24)
+Test: (4622, 24)
+
+# SEED = 0 #
+
+# baseline_all_features | remove=[] | seed=0 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.6369, RMSE: 93.1974, R2: 0.8789
+Epochs used (n_iter_): 133
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=0 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.9772, RMSE: 89.1640, R2: 0.8892
+Epochs used (n_iter_): 199
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=0 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.7406, RMSE: 88.2652, R2: 0.8914
+Epochs used (n_iter_): 240
+Model complexity (trainable params): 48129
+
+# SEED = 1 #
+
+# baseline_all_features | remove=[] | seed=1 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.5115, RMSE: 94.6561, R2: 0.8751
+Epochs used (n_iter_): 126
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=1 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.8401, RMSE: 91.4827, R2: 0.8833
+Epochs used (n_iter_): 152
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=1 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.0353, RMSE: 94.6672, R2: 0.8751
+Epochs used (n_iter_): 149
+Model complexity (trainable params): 48129
+
+# SEED = 2 #
+
+# baseline_all_features | remove=[] | seed=2 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.5384, RMSE: 92.6892, R2: 0.8802
+Epochs used (n_iter_): 233
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=2 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.8414, RMSE: 93.8497, R2: 0.8772
+Epochs used (n_iter_): 201
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=2 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.2848, RMSE: 91.9346, R2: 0.8822
+Epochs used (n_iter_): 174
+Model complexity (trainable params): 48129
+
+# SEED = 3 #
+
+# baseline_all_features | remove=[] | seed=3 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.9930, RMSE: 95.5255, R2: 0.8728
+Epochs used (n_iter_): 182
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=3 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.4468, RMSE: 91.6314, R2: 0.8829
+Epochs used (n_iter_): 169
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=3 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.7402, RMSE: 86.9537, R2: 0.8946
+Epochs used (n_iter_): 187
+Model complexity (trainable params): 48129
+
+# SEED = 4 #
+
+# baseline_all_features | remove=[] | seed=4 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.3279, RMSE: 93.7717, R2: 0.8774
+Epochs used (n_iter_): 131
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=4 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.9913, RMSE: 92.5141, R2: 0.8807
+Epochs used (n_iter_): 155
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=4 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.4536, RMSE: 90.4085, R2: 0.8860
+Epochs used (n_iter_): 222
+Model complexity (trainable params): 48129
+
+# SEED = 5 #
+
+# baseline_all_features | remove=[] | seed=5 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.0406, RMSE: 91.2167, R2: 0.8840
+Epochs used (n_iter_): 173
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=5 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.1552, RMSE: 93.4492, R2: 0.8782
+Epochs used (n_iter_): 159
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=5 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.9035, RMSE: 90.8183, R2: 0.8850
+Epochs used (n_iter_): 142
+Model complexity (trainable params): 48129
+
+# SEED = 6 #
+
+# baseline_all_features | remove=[] | seed=6 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.0979, RMSE: 94.3906, R2: 0.8758
+Epochs used (n_iter_): 219
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=6 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.2512, RMSE: 93.2303, R2: 0.8788
+Epochs used (n_iter_): 226
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=6 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.1502, RMSE: 88.5557, R2: 0.8907
+Epochs used (n_iter_): 182
+Model complexity (trainable params): 48129
+
+# SEED = 7 #
+
+# baseline_all_features | remove=[] | seed=7 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.2335, RMSE: 89.9537, R2: 0.8872
+Epochs used (n_iter_): 208
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=7 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.4191, RMSE: 93.2424, R2: 0.8788
+Epochs used (n_iter_): 86
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=7 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.5480, RMSE: 90.0273, R2: 0.8870
+Epochs used (n_iter_): 140
+Model complexity (trainable params): 48129
+
+# SEED = 8 #
+
+# baseline_all_features | remove=[] | seed=8 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.5103, RMSE: 97.1076, R2: 0.8685
+Epochs used (n_iter_): 184
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=8 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.6069, RMSE: 93.1737, R2: 0.8790
+Epochs used (n_iter_): 146
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=8 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.5204, RMSE: 91.3978, R2: 0.8835
+Epochs used (n_iter_): 139
+Model complexity (trainable params): 48129
+
+# SEED = 9 #
+
+# baseline_all_features | remove=[] | seed=9 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.0814, RMSE: 91.2663, R2: 0.8839
+Epochs used (n_iter_): 147
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=9 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.6809, RMSE: 87.9456, R2: 0.8922
+Epochs used (n_iter_): 190
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=9 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.9534, RMSE: 89.6369, R2: 0.8880
+Epochs used (n_iter_): 195
+Model complexity (trainable params): 48129
+
+# SEED = 10 #
+
+# baseline_all_features | remove=[] | seed=10 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.9966, RMSE: 93.0636, R2: 0.8793
+Epochs used (n_iter_): 186
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=10 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.3023, RMSE: 91.1141, R2: 0.8843
+Epochs used (n_iter_): 213
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=10 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.4091, RMSE: 94.6579, R2: 0.8751
+Epochs used (n_iter_): 185
+Model complexity (trainable params): 48129
+
+# SEED = 11 #
+
+# baseline_all_features | remove=[] | seed=11 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 58.5958, RMSE: 94.6165, R2: 0.8752
+Epochs used (n_iter_): 128
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=11 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.0320, RMSE: 89.2458, R2: 0.8890
+Epochs used (n_iter_): 191
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=11 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.3056, RMSE: 89.3257, R2: 0.8888
+Epochs used (n_iter_): 158
+Model complexity (trainable params): 48129
+
+# SEED = 12 #
+
+# baseline_all_features | remove=[] | seed=12 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.5533, RMSE: 92.0501, R2: 0.8819
+Epochs used (n_iter_): 233
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=12 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.7320, RMSE: 91.3249, R2: 0.8837
+Epochs used (n_iter_): 125
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=12 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.9398, RMSE: 91.7673, R2: 0.8826
+Epochs used (n_iter_): 158
+Model complexity (trainable params): 48129
+
+# SEED = 13 #
+
+# baseline_all_features | remove=[] | seed=13 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.9463, RMSE: 90.8988, R2: 0.8848
+Epochs used (n_iter_): 239
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=13 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.3616, RMSE: 89.3976, R2: 0.8886
+Epochs used (n_iter_): 186
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=13 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.2240, RMSE: 88.0666, R2: 0.8919
+Epochs used (n_iter_): 236
+Model complexity (trainable params): 48129
+
+# SEED = 14 #
+
+# baseline_all_features | remove=[] | seed=14 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.6597, RMSE: 91.4623, R2: 0.8834
+Epochs used (n_iter_): 213
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=14 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.1184, RMSE: 89.2862, R2: 0.8889
+Epochs used (n_iter_): 169
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=14 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.4029, RMSE: 89.4803, R2: 0.8884
+Epochs used (n_iter_): 176
+Model complexity (trainable params): 48129
+
+# SEED = 15 #
+
+# baseline_all_features | remove=[] | seed=15 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.2009, RMSE: 94.0304, R2: 0.8767
+Epochs used (n_iter_): 256
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=15 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.8842, RMSE: 90.4579, R2: 0.8859
+Epochs used (n_iter_): 183
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=15 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.5778, RMSE: 91.8528, R2: 0.8824
+Epochs used (n_iter_): 159
+Model complexity (trainable params): 48129
+
+# SEED = 16 #
+
+# baseline_all_features | remove=[] | seed=16 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.7248, RMSE: 92.7426, R2: 0.8801
+Epochs used (n_iter_): 194
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=16 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.1289, RMSE: 89.8695, R2: 0.8874
+Epochs used (n_iter_): 211
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=16 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 49.9427, RMSE: 88.7213, R2: 0.8903
+Epochs used (n_iter_): 280
+Model complexity (trainable params): 48129
+
+# SEED = 17 #
+
+# baseline_all_features | remove=[] | seed=17 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.9272, RMSE: 91.1467, R2: 0.8842
+Epochs used (n_iter_): 115
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=17 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.6441, RMSE: 91.8728, R2: 0.8823
+Epochs used (n_iter_): 175
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=17 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.6969, RMSE: 89.8742, R2: 0.8874
+Epochs used (n_iter_): 165
+Model complexity (trainable params): 48129
+
+# SEED = 18 #
+
+# baseline_all_features | remove=[] | seed=18 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.6790, RMSE: 90.6171, R2: 0.8855
+Epochs used (n_iter_): 231
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=18 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.2581, RMSE: 92.0277, R2: 0.8819
+Epochs used (n_iter_): 158
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=18 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 50.7284, RMSE: 88.4111, R2: 0.8910
+Epochs used (n_iter_): 266
+Model complexity (trainable params): 48129
+
+# SEED = 19 #
+
+# baseline_all_features | remove=[] | seed=19 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.8002, RMSE: 93.2736, R2: 0.8787
+Epochs used (n_iter_): 166
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=19 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.7553, RMSE: 92.7322, R2: 0.8801
+Epochs used (n_iter_): 142
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=19 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.7136, RMSE: 96.3195, R2: 0.8707
+Epochs used (n_iter_): 292
+Model complexity (trainable params): 48129
+
+# SEED = 20 #
+
+# baseline_all_features | remove=[] | seed=20 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.2267, RMSE: 90.6782, R2: 0.8854
+Epochs used (n_iter_): 164
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=20 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.2576, RMSE: 88.6267, R2: 0.8905
+Epochs used (n_iter_): 273
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=20 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.3102, RMSE: 92.0133, R2: 0.8820
+Epochs used (n_iter_): 128
+Model complexity (trainable params): 48129
+
+# SEED = 21 #
+
+# baseline_all_features | remove=[] | seed=21 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.1226, RMSE: 91.2484, R2: 0.8839
+Epochs used (n_iter_): 227
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=21 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.2969, RMSE: 95.3563, R2: 0.8732
+Epochs used (n_iter_): 262
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=21 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.2429, RMSE: 96.4121, R2: 0.8704
+Epochs used (n_iter_): 210
+Model complexity (trainable params): 48129
+
+# SEED = 22 #
+
+# baseline_all_features | remove=[] | seed=22 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.9807, RMSE: 96.8814, R2: 0.8691
+Epochs used (n_iter_): 121
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=22 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.9268, RMSE: 90.4191, R2: 0.8860
+Epochs used (n_iter_): 236
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=22 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.6418, RMSE: 89.3406, R2: 0.8887
+Epochs used (n_iter_): 226
+Model complexity (trainable params): 48129
+
+# SEED = 23 #
+
+# baseline_all_features | remove=[] | seed=23 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.0484, RMSE: 94.7347, R2: 0.8749
+Epochs used (n_iter_): 197
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=23 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 51.7478, RMSE: 88.2885, R2: 0.8913
+Epochs used (n_iter_): 173
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=23 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.6880, RMSE: 94.4100, R2: 0.8757
+Epochs used (n_iter_): 126
+Model complexity (trainable params): 48129
+
+# SEED = 24 #
+
+# baseline_all_features | remove=[] | seed=24 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.1205, RMSE: 93.4348, R2: 0.8783
+Epochs used (n_iter_): 237
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=24 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.1821, RMSE: 90.3468, R2: 0.8862
+Epochs used (n_iter_): 219
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=24 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.9692, RMSE: 90.8373, R2: 0.8850
+Epochs used (n_iter_): 145
+Model complexity (trainable params): 48129
+
+# SEED = 25 #
+
+# baseline_all_features | remove=[] | seed=25 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 50.8708, RMSE: 88.9359, R2: 0.8897
+Epochs used (n_iter_): 256
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=25 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.8589, RMSE: 92.9258, R2: 0.8796
+Epochs used (n_iter_): 182
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=25 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 50.7241, RMSE: 88.1950, R2: 0.8916
+Epochs used (n_iter_): 183
+Model complexity (trainable params): 48129
+
+# SEED = 26 #
+
+# baseline_all_features | remove=[] | seed=26 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 54.5107, RMSE: 91.8162, R2: 0.8825
+Epochs used (n_iter_): 179
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=26 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.8755, RMSE: 97.0692, R2: 0.8686
+Epochs used (n_iter_): 138
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=26 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 55.6914, RMSE: 91.9348, R2: 0.8822
+Epochs used (n_iter_): 126
+Model complexity (trainable params): 48129
+
+# SEED = 27 #
+
+# baseline_all_features | remove=[] | seed=27 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.5160, RMSE: 94.9296, R2: 0.8744
+Epochs used (n_iter_): 337
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=27 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.5243, RMSE: 88.6658, R2: 0.8904
+Epochs used (n_iter_): 195
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=27 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 56.6282, RMSE: 96.8507, R2: 0.8692
+Epochs used (n_iter_): 163
+Model complexity (trainable params): 48129
+
+# SEED = 28 #
+
+# baseline_all_features | remove=[] | seed=28 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.8169, RMSE: 93.8176, R2: 0.8773
+Epochs used (n_iter_): 200
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=28 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 50.7090, RMSE: 87.7187, R2: 0.8927
+Epochs used (n_iter_): 241
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=28 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 53.1910, RMSE: 90.0450, R2: 0.8870
+Epochs used (n_iter_): 198
+Model complexity (trainable params): 48129
+
+# SEED = 29 #
+
+# baseline_all_features | remove=[] | seed=29 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 20
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 52.0047, RMSE: 89.9693, R2: 0.8871
+Epochs used (n_iter_): 223
+Model complexity (trainable params): 48641
+
+# baseline_without_TiltAngle | remove=['TiltAngle'] | seed=29 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 19
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.7346, RMSE: 92.5414, R2: 0.8806
+Epochs used (n_iter_): 125
+Model complexity (trainable params): 48385
+
+# without_TiltAngle_and_hour_cos | remove=['TiltAngle', 'hour_cos'] | seed=29 #
+
+ # MAJKL DJUK #
+Same feature columns train/val: True
+Number of features: 18
+NaNs in train: 0
+NaNs in val: 0
+
+Validation results:
+MAE: 57.3812, RMSE: 94.0784, R2: 0.8766
+Epochs used (n_iter_): 142
+Model complexity (trainable params): 48129
+
+# STABILITY RESULT PER SEED #
+ random_state                     experiment   removed_features  n_features  val_rmse  n_iter_  n_params
+            0          baseline_all_features               none          20 93.197404      133     48641
+            0     baseline_without_TiltAngle          TiltAngle          19 89.163993      199     48385
+            0 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 88.265176      240     48129
+            1          baseline_all_features               none          20 94.656094      126     48641
+            1     baseline_without_TiltAngle          TiltAngle          19 91.482684      152     48385
+            1 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 94.667201      149     48129
+            2          baseline_all_features               none          20 92.689172      233     48641
+            2     baseline_without_TiltAngle          TiltAngle          19 93.849703      201     48385
+            2 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 91.934553      174     48129
+            3          baseline_all_features               none          20 95.525457      182     48641
+            3     baseline_without_TiltAngle          TiltAngle          19 91.631420      169     48385
+            3 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 86.953706      187     48129
+            4          baseline_all_features               none          20 93.771714      131     48641
+            4     baseline_without_TiltAngle          TiltAngle          19 92.514051      155     48385
+            4 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 90.408481      222     48129
+            5          baseline_all_features               none          20 91.216745      173     48641
+            5     baseline_without_TiltAngle          TiltAngle          19 93.449216      159     48385
+            5 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 90.818294      142     48129
+            6          baseline_all_features               none          20 94.390553      219     48641
+            6     baseline_without_TiltAngle          TiltAngle          19 93.230324      226     48385
+            6 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 88.555678      182     48129
+            7          baseline_all_features               none          20 89.953687      208     48641
+            7     baseline_without_TiltAngle          TiltAngle          19 93.242446       86     48385
+            7 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 90.027314      140     48129
+            8          baseline_all_features               none          20 97.107585      184     48641
+            8     baseline_without_TiltAngle          TiltAngle          19 93.173665      146     48385
+            8 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 91.397806      139     48129
+            9          baseline_all_features               none          20 91.266327      147     48641
+            9     baseline_without_TiltAngle          TiltAngle          19 87.945625      190     48385
+            9 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 89.636938      195     48129
+           10          baseline_all_features               none          20 93.063575      186     48641
+           10     baseline_without_TiltAngle          TiltAngle          19 91.114077      213     48385
+           10 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 94.657905      185     48129
+           11          baseline_all_features               none          20 94.616511      128     48641
+           11     baseline_without_TiltAngle          TiltAngle          19 89.245794      191     48385
+           11 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 89.325746      158     48129
+           12          baseline_all_features               none          20 92.050068      233     48641
+           12     baseline_without_TiltAngle          TiltAngle          19 91.324935      125     48385
+           12 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 91.767298      158     48129
+           13          baseline_all_features               none          20 90.898761      239     48641
+           13     baseline_without_TiltAngle          TiltAngle          19 89.397551      186     48385
+           13 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 88.066644      236     48129
+           14          baseline_all_features               none          20 91.462289      213     48641
+           14     baseline_without_TiltAngle          TiltAngle          19 89.286166      169     48385
+           14 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 89.480287      176     48129
+           15          baseline_all_features               none          20 94.030383      256     48641
+           15     baseline_without_TiltAngle          TiltAngle          19 90.457898      183     48385
+           15 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 91.852798      159     48129
+           16          baseline_all_features               none          20 92.742554      194     48641
+           16     baseline_without_TiltAngle          TiltAngle          19 89.869532      211     48385
+           16 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 88.721261      280     48129
+           17          baseline_all_features               none          20 91.146702      115     48641
+           17     baseline_without_TiltAngle          TiltAngle          19 91.872766      175     48385
+           17 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 89.874222      165     48129
+           18          baseline_all_features               none          20 90.617127      231     48641
+           18     baseline_without_TiltAngle          TiltAngle          19 92.027747      158     48385
+           18 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 88.411135      266     48129
+           19          baseline_all_features               none          20 93.273595      166     48641
+           19     baseline_without_TiltAngle          TiltAngle          19 92.732169      142     48385
+           19 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 96.319533      292     48129
+           20          baseline_all_features               none          20 90.678199      164     48641
+           20     baseline_without_TiltAngle          TiltAngle          19 88.626691      273     48385
+           20 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 92.013319      128     48129
+           21          baseline_all_features               none          20 91.248365      227     48641
+           21     baseline_without_TiltAngle          TiltAngle          19 95.356292      262     48385
+           21 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 96.412069      210     48129
+           22          baseline_all_features               none          20 96.881380      121     48641
+           22     baseline_without_TiltAngle          TiltAngle          19 90.419054      236     48385
+           22 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 89.340623      226     48129
+           23          baseline_all_features               none          20 94.734699      197     48641
+           23     baseline_without_TiltAngle          TiltAngle          19 88.288497      173     48385
+           23 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 94.409999      126     48129
+           24          baseline_all_features               none          20 93.434805      237     48641
+           24     baseline_without_TiltAngle          TiltAngle          19 90.346770      219     48385
+           24 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 90.837293      145     48129
+           25          baseline_all_features               none          20 88.935910      256     48641
+           25     baseline_without_TiltAngle          TiltAngle          19 92.925753      182     48385
+           25 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 88.194957      183     48129
+           26          baseline_all_features               none          20 91.816176      179     48641
+           26     baseline_without_TiltAngle          TiltAngle          19 97.069165      138     48385
+           26 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 91.934787      126     48129
+           27          baseline_all_features               none          20 94.929619      337     48641
+           27     baseline_without_TiltAngle          TiltAngle          19 88.665832      195     48385
+           27 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 96.850728      163     48129
+           28          baseline_all_features               none          20 93.817561      200     48641
+           28     baseline_without_TiltAngle          TiltAngle          19 87.718712      241     48385
+           28 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 90.045031      198     48129
+           29          baseline_all_features               none          20 89.969318      223     48641
+           29     baseline_without_TiltAngle          TiltAngle          19 92.541435      125     48385
+           29 without_TiltAngle_and_hour_cos TiltAngle,hour_cos          18 94.078448      142     48129
+
+# VAL-ONLY SUMMARY PER EXPERIMENT #
+                    experiment  mean_rmse  std_rmse  median_rmse  min_rmse  max_rmse  mean_epochs  mean_params
+without_TiltAngle_and_hour_cos  91.175308  2.719863    90.613387 86.953706 96.850728   183.066667      48129.0
+    baseline_without_TiltAngle  91.298999  2.264732    91.403809 87.718712 97.069165   182.666667      48385.0
+         baseline_all_features  92.804078  2.049424    92.903064 88.935910 97.107585   194.600000      48641.0
+
+# PAIRED DELTA (no_tilt - all_features) #
+ random_state  baseline_all_features  baseline_without_TiltAngle  delta_no_tilt_minus_all_features
+            0              93.197404                   89.163993                         -4.033410
+            1              94.656094                   91.482684                         -3.173410
+            2              92.689172                   93.849703                          1.160532
+            3              95.525457                   91.631420                         -3.894038
+            4              93.771714                   92.514051                         -1.257663
+            5              91.216745                   93.449216                          2.232471
+            6              94.390553                   93.230324                         -1.160229
+            7              89.953687                   93.242446                          3.288759
+            8              97.107585                   93.173665                         -3.933920
+            9              91.266327                   87.945625                         -3.320702
+           10              93.063575                   91.114077                         -1.949499
+           11              94.616511                   89.245794                         -5.370717
+           12              92.050068                   91.324935                         -0.725133
+           13              90.898761                   89.397551                         -1.501210
+           14              91.462289                   89.286166                         -2.176123
+           15              94.030383                   90.457898                         -3.572485
+           16              92.742554                   89.869532                         -2.873021
+           17              91.146702                   91.872766                          0.726063
+           18              90.617127                   92.027747                          1.410620
+           19              93.273595                   92.732169                         -0.541426
+           20              90.678199                   88.626691                         -2.051508
+           21              91.248365                   95.356292                          4.107926
+           22              96.881380                   90.419054                         -6.462326
+           23              94.734699                   88.288497                         -6.446202
+           24              93.434805                   90.346770                         -3.088035
+           25              88.935910                   92.925753                          3.989843
+           26              91.816176                   97.069165                          5.252989
+           27              94.929619                   88.665832                         -6.263786
+           28              93.817561                   87.718712                         -6.098849
+           29              89.969318                   92.541435                          2.572118
+
+Decision metrics:
+mean_delta = -1.5051
+std_delta = 3.3456
+median_delta = -2.0005
+wins = 21/30
+win_rate = 0.7000
+
+# PAIRED DELTA (no_tilt_hour_cos - no_tilt) #
+ random_state  baseline_without_TiltAngle  without_TiltAngle_and_hour_cos  delta_no_tilt_hour_cos_minus_no_tilt
+            0                   89.163993                       88.265176                             -0.898818
+            1                   91.482684                       94.667201                              3.184517
+            2                   93.849703                       91.934553                             -1.915151
+            3                   91.631420                       86.953706                             -4.677713
+            4                   92.514051                       90.408481                             -2.105570
+            5                   93.449216                       90.818294                             -2.630922
+            6                   93.230324                       88.555678                             -4.674646
+            7                   93.242446                       90.027314                             -3.215132
+            8                   93.173665                       91.397806                             -1.775859
+            9                   87.945625                       89.636938                              1.691314
+           10                   91.114077                       94.657905                              3.543829
+           11                   89.245794                       89.325746                              0.079951
+           12                   91.324935                       91.767298                              0.442363
+           13                   89.397551                       88.066644                             -1.330907
+           14                   89.286166                       89.480287                              0.194122
+           15                   90.457898                       91.852798                              1.394900
+           16                   89.869532                       88.721261                             -1.148271
+           17                   91.872766                       89.874222                             -1.998543
+           18                   92.027747                       88.411135                             -3.616613
+           19                   92.732169                       96.319533                              3.587364
+           20                   88.626691                       92.013319                              3.386628
+           21                   95.356292                       96.412069                              1.055778
+           22                   90.419054                       89.340623                             -1.078431
+           23                   88.288497                       94.409999                              6.121501
+           24                   90.346770                       90.837293                              0.490523
+           25                   92.925753                       88.194957                             -4.730796
+           26                   97.069165                       91.934787                             -5.134377
+           27                   88.665832                       96.850728                              8.184895
+           28                   87.718712                       90.045031                              2.326319
+           29                   92.541435                       94.078448                              1.537013
+
+Decision metrics:
+mean_delta = -0.1237
+std_delta = 3.2608
+median_delta = -0.4094
+wins = 15/30
+win_rate = 0.5000
+
+# PAIRED DELTA (no_tilt_hour_cos - all_features) #
+ random_state  baseline_all_features  without_TiltAngle_and_hour_cos  delta_no_tilt_hour_cos_minus_all_features
+            0              93.197404                       88.265176                                  -4.932228
+            1              94.656094                       94.667201                                   0.011107
+            2              92.689172                       91.934553                                  -0.754619
+            3              95.525457                       86.953706                                  -8.571751
+            4              93.771714                       90.408481                                  -3.363233
+            5              91.216745                       90.818294                                  -0.398451
+            6              94.390553                       88.555678                                  -5.834875
+            7              89.953687                       90.027314                                   0.073626
+            8              97.107585                       91.397806                                  -5.709779
+            9              91.266327                       89.636938                                  -1.629388
+           10              93.063575                       94.657905                                   1.594330
+           11              94.616511                       89.325746                                  -5.290766
+           12              92.050068                       91.767298                                  -0.282770
+           13              90.898761                       88.066644                                  -2.832117
+           14              91.462289                       89.480287                                  -1.982002
+           15              94.030383                       91.852798                                  -2.177584
+           16              92.742554                       88.721261                                  -4.021292
+           17              91.146702                       89.874222                                  -1.272480
+           18              90.617127                       88.411135                                  -2.205992
+           19              93.273595                       96.319533                                   3.045938
+           20              90.678199                       92.013319                                   1.335120
+           21              91.248365                       96.412069                                   5.163704
+           22              96.881380                       89.340623                                  -7.540757
+           23              94.734699                       94.409999                                  -0.324701
+           24              93.434805                       90.837293                                  -2.597512
+           25              88.935910                       88.194957                                  -0.740953
+           26              91.816176                       91.934787                                   0.118611
+           27              94.929619                       96.850728                                   1.921109
+           28              93.817561                       90.045031                                  -3.772530
+           29              89.969318                       94.078448                                   4.109130
+
+Decision metrics:
+mean_delta = -1.6288
+std_delta = 3.2501
+median_delta = -1.4509
+wins = 21/30
+win_rate = 0.7000
+
+# FINAL RANKING (BEST -> WORST) #
+                    experiment  mean_rmse  std_rmse  median_rmse  min_rmse  max_rmse
+without_TiltAngle_and_hour_cos  91.175308  2.719863    90.613387 86.953706 96.850728
+    baseline_without_TiltAngle  91.298999  2.264732    91.403809 87.718712 97.069165
+         baseline_all_features  92.804078  2.049424    92.903064 88.935910 97.107585
