@@ -23,7 +23,7 @@ def main():
     print("Test:", test_df.shape)
 
     seed_list = list(range(30))
-    baseline_remove = ["TiltAngle, hour_cos"]
+    baseline_remove = ["TiltAngle"]
 
     top_models = [
         {
