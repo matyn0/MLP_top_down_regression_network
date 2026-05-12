@@ -1,6 +1,8 @@
 class Tee:
+    """Zapisuje jeden print vystup naraz do viacerych streamov."""
+
     def __init__(self, *streams):
-        self.streams = streams
+        self.streams = streams  # napr. terminal a otvoreny log subor
 
     def write(self, data):
         for stream in self.streams:
@@ -13,6 +15,8 @@ class Tee:
 
 
 def count_trainable_params(model):
-    weights = sum(w.size for w in model.coefs_)
-    biases = sum(b.size for b in model.intercepts_)
+    """Spocita vsetky trenovatelne vahy a biasy v MLP modeli."""
+    weights = sum(w.size for w in model.coefs_)  # vahove matice medzi vrstvami
+    biases = sum(b.size for b in model.intercepts_)  # bias vektory jednotlivych vrstiev
+
     return weights + biases

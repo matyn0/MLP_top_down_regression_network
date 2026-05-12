@@ -12,7 +12,7 @@ from utils import Tee
 
 
 def main():
-    # 1) Load + preprocess
+    """Porovna viac MLP konfiguracii cez rovnake seedy a zoradi ich podla validation RMSE."""
     train_df, val_df, test_df = load_datasets()
     train_df = add_time_cyclis_features(train_df)
     val_df = add_time_cyclis_features(val_df)
@@ -23,10 +23,10 @@ def main():
     print("Validation:", val_df.shape)
     print("Test:", test_df.shape)
 
-    # 2) Setup
-    seed_list = list(range(30))
-    features_to_remove = []
+    seed_list = list(range(30))  # kazdy model testujeme na rovnakych seedoch
+    features_to_remove = []  # model selection robime najprv na vsetkych features
 
+    # Kazda konfiguracia meni architekturu siete alebo regularizaciu alpha.
     model_configs = [
         {
             "name": "mlp_256_128_64_32_a1e4",
@@ -58,8 +58,9 @@ def main():
         },
     ]
 
-    # 3) Run all seeds x all configs
     rows = []
+
+    # Spustime kazdy model cez kazdy seed, aby porovnanie nestalo na jednej inicializacii vah.
     for seed in seed_list:
         print(f"\n# SEED = {seed} #")
         for cfg in model_configs:
@@ -90,12 +91,12 @@ def main():
                 }
             )
 
-    # 4) Raw table
     raw_df = pd.DataFrame(rows).sort_values(["model_name", "seed"])
+
     print("\n# RAW RESULTS #")
     print(raw_df.to_string(index=False))
 
-    # 5) Summary table
+    # Summary pouzivame na ranking modelov podla validation RMSE cez vsetky seedy.
     summary_df = (
         raw_df.groupby("model_name", as_index=False)["val_rmse"]
         .agg(mean="mean", std="std", median="median", min="min", max="max")
@@ -105,8 +106,8 @@ def main():
     print("\n# MODEL GRID SUMMARY (val_rmse) #")
     print(summary_df.to_string(index=False))
 
-    # 6) Top 2
     top2_names = summary_df.head(2)["model_name"].tolist()
+
     print("\n# TOP 2 MODELS #")
     for i, name in enumerate(top2_names, start=1):
         print(f"{i}. {name}")
@@ -120,9 +121,11 @@ def main():
 if __name__ == "__main__":
     log_dir = Path("docs_majk_djuk")
     log_dir.mkdir(parents=True, exist_ok=True)
+
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_path = log_dir / f"model_grid_{timestamp}.txt"
 
+    # Vystup ide naraz do terminalu aj do log suboru.
     with log_path.open("w", encoding="utf-8") as log_file:
         with redirect_stdout(Tee(sys.stdout, log_file)):
             main()

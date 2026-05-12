@@ -16,6 +16,7 @@ def run_experiment(
     mlp_params=None,
     model_name=None,
 ):
+    """Spusti jeden komplet experiment: vyberie features, pripravi data, natrenuje MLP a vrati metriky."""
 
     if features_to_remove is None:
         features_to_remove = []
@@ -24,31 +25,29 @@ def run_experiment(
         mlp_params = {}
 
 
-    # Target and input features (single final setup)
+    # Vyberieme vstupne features pre tento experiment.
     target_col = "Irradiance"
     non_feature_cols = ["PictureName", "DateTime", "IrradianceNotCompensated", target_col]
     all_features = [c for c in train_df.columns if c not in non_feature_cols]
 
 
-#safety vibe check
     missing_features = [f for f in features_to_remove if f not in all_features]
     if missing_features:
         raise ValueError(f"Neznama feature-a v features_to_remove: {missing_features}")
 
-#final feature subset
-    feature_cols = [f for f in all_features if f not in features_to_remove]
+    feature_cols = [f for f in all_features if f not in features_to_remove]  # finalny feature subset
 
 
-#split for x/y datasets
+    # Rozdelime data na vstupy X a cielovu hodnotu y.
     X_train = train_df[feature_cols]
     y_train = train_df[target_col]
     X_val = val_df[feature_cols]
     y_val = val_df[target_col]
-    if evaluate_test:                    #testing data leakage
+    if evaluate_test:
         X_test = test_df[feature_cols]
         y_test = test_df[target_col]
 
-# Handle missing values using train-set medians only
+    # Chybajuce hodnoty doplname train medianmi, aby validation/test neovplyvnili preprocessing.
     train_medians = X_train.median(numeric_only=True)
     X_train = X_train.fillna(train_medians)
     X_val = X_val.fillna(train_medians)
@@ -56,7 +55,6 @@ def run_experiment(
         X_test = X_test.fillna(train_medians)
 
 
-#diagnostics prints
     print("\n # MAJKL DJUK #")
     print("Same feature columns train/val:", list(X_train.columns) == list(X_val.columns))
     if evaluate_test:
@@ -68,7 +66,7 @@ def run_experiment(
     if evaluate_test:
         print("NaNs in test:", int(X_test.isna().sum().sum()))
 
-    # Scaling
+    # Scaling sa uci iba na train dat, validation/test iba transformujeme rovnakym scalerom.
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     X_val_scaled = scaler.transform(X_val)
@@ -76,7 +74,6 @@ def run_experiment(
         X_test_scaled = scaler.transform(X_test)
 
 
-#model params assebly
     default_mlp_params = {
         "hidden_layer_sizes": (256, 128, 64, 32),
         "activation": "relu",
@@ -84,16 +81,15 @@ def run_experiment(
         "max_iter": 1500,
         "random_state": random_state,
     }
-    final_mlp_params = {**default_mlp_params, **mlp_params}
-    final_mlp_params["random_state"] = random_state
+    final_mlp_params = {**default_mlp_params, **mlp_params}  # experiment moze prepisat defaultne MLP nastavenia
+    final_mlp_params["random_state"] = random_state  # seed drzi porovnania reprodukovatelne
 
-#actual training starts right here 
     mlp = MLPRegressor(**final_mlp_params) 
     mlp.fit(X_train_scaled, y_train)
     epochs_used = mlp.n_iter_
     n_params = count_trainable_params(mlp)
 
-#validation
+    # Validation metriky pouzivame na porovnanie modelov a feature subsetov.
     val_pred = mlp.predict(X_val_scaled)
     val_mae, val_rmse, val_r2 = evaluate_metrics(y_val, val_pred)
     print("\nValidation results:")
@@ -101,7 +97,6 @@ def run_experiment(
     print(f"Epochs used (n_iter_): {epochs_used}")
     print(f"Model complexity (trainable params): {n_params}")
 
-#test
     test_mae, test_rmse, test_r2 = None, None, None
 
     if evaluate_test:
@@ -141,23 +136,27 @@ def run_leave_one_feature_out_ablation(
     baseline_removed_features=None,
     random_state=42,
 ):
+    """Otestuje, co sa stane, ked z baseline subsetu odstranime vzdy jednu feature."""
     if baseline_removed_features is None:
         baseline_removed_features = []
 
 
     ablation_rows = []
     for feature_to_remove in baseline_features:
-        feature_cols = [f for f in baseline_features if f != feature_to_remove]
+        feature_cols = [f for f in baseline_features if f != feature_to_remove]  # subset bez jednej testovanej feature
 
+        # Kazdy ablation beh pouziva rovnaky train/validation princip ako hlavny experiment.
         X_train = train_df[feature_cols]
         y_train = train_df["Irradiance"]
         X_val = val_df[feature_cols]
         y_val = val_df["Irradiance"]
 
+        # Missing values riesime iba cez train mediany, aby validation neovplyvnil preprocessing.
         train_medians = X_train.median(numeric_only=True)
         X_train = X_train.fillna(train_medians)
         X_val = X_val.fillna(train_medians)
 
+        # Scaler sa fituje iba na train dat a potom sa rovnako aplikuje na validation.
         scaler = StandardScaler()
         X_train_scaled = scaler.fit_transform(X_train)
         X_val_scaled = scaler.transform(X_val)
@@ -172,7 +171,7 @@ def run_leave_one_feature_out_ablation(
         mlp.fit(X_train_scaled, y_train)
         val_pred = mlp.predict(X_val_scaled)
         _, val_rmse_without, _ = evaluate_metrics(y_val, val_pred)
-        delta_rmse = val_rmse_without - baseline_rmse
+        delta_rmse = val_rmse_without - baseline_rmse  # kladne = odstranenie zhorsilo model, zaporne = pomohlo
 
         full_removed_features = baseline_removed_features + [feature_to_remove]
 
@@ -199,12 +198,15 @@ def run_seed_stability(
     stability_configs,
     evaluate_test=False,
 ):
+    """Spusti viac experimentov cez viac seedov a vrati tabulku stability."""
     stability_results = []
 
     for seed in seed_list:
         print(f"\n # SEED = {seed} #")
         for cfg in stability_configs:
             print(f"\n# {cfg['name']} | remove={cfg['remove']} | seed={seed} #")
+
+            # Rovnake konfiguracie pustame cez viac seedov, aby sme videli stabilitu vysledkov.
             res = run_experiment(
                 train_df,
                 val_df,
@@ -216,6 +218,7 @@ def run_seed_stability(
             )
             stability_results.append(res)
 
+    # Z celeho vysledku nechavame iba stlpce potrebne na porovnanie experimentov.
     stability_df = pd.DataFrame(stability_results)[
         ["random_state", "experiment", "removed_features", "n_features", "val_rmse"]
     ].sort_values(["random_state", "experiment"])

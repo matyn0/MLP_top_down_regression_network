@@ -5,18 +5,20 @@ from train import run_experiment
 
 
 def main():
+    """Rychly single-seed screening dalsich kandidatov na odstranenie feature."""
 
-    removed_base = ["TiltAngle"]
-    random_state = 42
+    removed_base = ["TiltAngle"]  # aktualny baseline subset uz nepouziva TiltAngle
+    random_state = 42  # jeden fixny seed pre rychly orientacny test
 
     train_df, val_df, test_df = load_datasets()
     train_df = add_time_cyclis_features(train_df)
     val_df = add_time_cyclis_features(val_df)
+    test_df = add_time_cyclis_features(test_df)
 
     non_feature_cols = ["PictureName", "DateTime", "IrradianceNotCompensated", "Irradiance"]
     all_features = [c for c in train_df.columns if c not in non_feature_cols]
 
-    candidates = [f for f in all_features if f not in removed_base]
+    candidates = [f for f in all_features if f not in removed_base]  # features, ktore este mozeme skusit odstranit
     if not candidates:
         print("No candidates left.")
         return
@@ -37,6 +39,8 @@ def main():
     print(f"\n baseline_val_rmse={baseline_rmse:.4f}")
 
     rows = []
+
+    # Kazdeho kandidata pridame k removed_base a porovname ho s baseline na rovnakom seede.
     for feat in candidates:
         removed_list = removed_base + [feat]
         print(f"\nrunning candidate: {feat}")
@@ -50,7 +54,7 @@ def main():
             evaluate_test=False,
         )
 
-        delta = res["val_rmse"] - baseline_rmse
+        delta = res["val_rmse"] - baseline_rmse  # zaporne = odstranenie kandidata zlepsilo RMSE
         rows.append(
             {
                 "candidate_feature": feat,
@@ -60,10 +64,12 @@ def main():
         )
 
     out = pd.DataFrame(rows).sort_values("delta_candidate_minus_baseline", ascending=True)
+
     print("\n ^^ seed 42 - add one leave one results ^^")
     print(out.to_string(index=False))
 
     best = out.iloc[0]
+
     print("\n ^^ best candidate ^^")
     print(
         f"feature = {best['candidate_feature']}, "
